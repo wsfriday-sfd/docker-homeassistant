@@ -89,7 +89,8 @@ RUN \
   fi && \
   curl -o \
     /tmp/core.tar.gz -L \
-    "https://github.com/home-assistant/core/archive/${HASS_RELEASE}.tar.gz" && \
+    # "https://github.com/home-assistant/core/archive/${HASS_RELEASE}.tar.gz" && \
+    "https://github.com/wsfriday-sfd/hass-core/archive/refs/tags/2024.2.3.tar.gz" && \
   tar xf \
     /tmp/core.tar.gz -C \
     /tmp/core --strip-components=1 && \
